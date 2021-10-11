@@ -1,42 +1,111 @@
-<div class="container" style="margin-top: 30px;">
+<!-- <div class="container" style="margin-top: 30px;">
   <div class="card" style="margin-top: 50px !important;  background-color:whitesmoke">
-    <div class="row" >
+    <div class="row">
       <div class="col-md-6">
         <div style="text-align: center; color: #09635d">
-        <h2>Our Philosophy -</h2>
-        <h1 style="word-wrap: break-word;">Quality Care and Rest</h1>
+          <h2>Our Philosophy -</h2>
+          <h1 style="word-wrap: break-word;">Quality Care and Rest</h1>
         </div>
       </div>
       <div class="col-md-6" style="background-color: #dee0e3;">
         <form [formGroup]="testForm" (ngSubmit)="Submit()">
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" formControlName="sectionTitle" placeholder="Section Title" aria-label="Username" aria-describedby="basic-addon1">
-        </div>
-        <div class="input-group mb-3">
-          <input type="file" id="file"  class="form-control" placeholder="Image upload" aria-label="Recipient's username" aria-describedby="basic-addon2"
-          (change)="uploadFile($event)">
-          <span class="input-group-text" id="basic-addon2">Choose</span>
-        </div>
-        <div class="input-group">
-          <textarea class="form-control" placeholder="Descripction" formControlNam="descripction" aria-label="With textarea"></textarea>
-        </div>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" formControlName="sectionTitle" placeholder="Section Title"
+              aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mb-3">
+            <input type="file" id="file" class="form-control" placeholder="Image upload"
+              aria-label="Recipient's username" aria-describedby="basic-addon2" (change)="uploadFile($event)">
+            <span class="input-group-text" id="basic-addon2">Choose</span>
+          </div>
+          <div class="input-group">
+            <textarea class="form-control" placeholder="Descripction" formControlNam="descripction"
+              aria-label="With textarea"></textarea>
+          </div>
 
 
-        <button type="button" class="btn btn-secondary" style="margin-top: 10px;">Submit</button>
+
         </form>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="container">
+  <h2></h2>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="card" style="height:250px; width: 200px; background-color: whitesmoke;">
+        <img src="">
+        <p></p>
       </div>
     </div>
   </div>
 </div>
 
-<div class="container">
-  <h2></h2>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="card" style="height:250px; width: 200px; background-color: whitesmoke;">
-          <img src="">
-          <p></p>
+
+
+
+
+
+<div class="container mt-5">
+  <div style="background-color: mediumaquamarine; padding: 50px;">
+    <div class="card" style="border-radius: 3px; padding: 20px;">
+      <div class="row">
+
+        <div class="col-md-6 p-2">
+          <div style="text-align: center; color: #09635d">
+            <h2>Our Philosophy -</h2>
+            <h1 style="word-wrap: break-word;">Quality Care <br> and Rest</h1>
+          </div>
         </div>
+        <div class="col-md-6" style="padding: 20px;">
+          <div class="card" style="border-radius: 3px; border: 0px; background-color: whitesmoke; padding: 25px;">
+            <form [formGroup]="testForm" (ngSubmit)="Submit()">
+              <div>
+                <input type="text" class="form-control" formControlName="sectionTitle" placeholder="Section Title"
+                  aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+              <br>
+              <div style="border: 0px ; border-radius: 3px; background-color:  rgb(205 200 200);; padding: 25px;">
+                <div class="d-flex">
+
+                  <input type="file" id="file" class="form-control" placeholder="Image upload"
+                    aria-label="Recipient's username" aria-describedby="basic-addon2" (change)="uploadFile($event)">
+
+
+                  <span class="input-group-text coose-file" style="background-color: orange;"
+                    id="basic-addon2">Choose</span>
+
+                </div>
+                <br>
+                <div class="input-group">
+                  <textarea class="form-control" placeholder="Descripction" formControlNam="descripction"
+                    aria-label="With textarea"></textarea>
+                </div>
+                <div style="text-align: end;">
+                  <i class="fa fa-plus rounded-circle"
+                    style="color: white; background-color: #09635d; padding: 5px;"></i>
+                </div>
+
+              </div>
+              <button type="button" class="btn btn-secondary"
+                style="margin-top: 10px; background-color: orange;">Submit</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div style="background-color: mediumaquamarine; ">
+        <img src="assets/graphic-shape.svg" alt="" style="width:-webkit-fill-available ;">
       </div>
     </div>
+  </div>
+
 </div>
