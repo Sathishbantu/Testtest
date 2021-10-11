@@ -1,0 +1,7 @@
+input#file {
+    display: inline-block;
+    width: 85%;
+    padding: 43px 0 0 0;
+    overflow: hidden;  
+
+  }
